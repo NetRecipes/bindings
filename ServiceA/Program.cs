@@ -2,7 +2,8 @@ using AspNetCore.Swagger.Themes;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.AddServiceDefaults();
-builder.Services.AddControllers();
+builder.Services.AddDaprClient();
+builder.Services.AddControllers().AddDapr();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
@@ -15,5 +16,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
+app.UseCloudEvents();
 app.MapControllers();
+app.MapSubscribeHandler();
 app.Run();

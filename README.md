@@ -23,3 +23,22 @@ spec:
 ```
 
 ---
+
+## Output Bindings
+
+- [x] `Local Storage`
+
+```yaml
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: storage
+spec:
+  type: bindings.localstorage
+  version: v1
+  metadata:
+  - name: rootPath
+    value: "../Storage"
+```
+
+---
