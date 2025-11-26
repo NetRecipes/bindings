@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Bindings.AppHost/Bindings.AppHost.csproj" />
+  <Project Path="Bindings.ServiceDefaults/Bindings.ServiceDefaults.csproj" />
+  <Project Path="ServiceA/ServiceA.csproj" />
+</Solution>
