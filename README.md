@@ -2,6 +2,8 @@
 
 `.NET Aspire` + `DAPR` - Bindings
 
+## For a written article, refer: [Bindings](https://netrecipes.github.io/courses/dapr-aspire/bindings/)
+
 ## Input Bindings
 
 - [x] `CRON`
